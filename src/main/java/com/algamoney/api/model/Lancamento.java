@@ -29,7 +29,6 @@ public class Lancamento {
 	private LocalDate dataVencimento;
 	
 	@Column(name = "data_pagamento")
-	
 	private LocalDate dataPagamento;
 	
 	private BigDecimal valor;
@@ -95,12 +94,12 @@ public class Lancamento {
 		this.observacao = observacao;
 	}
 
-	public TipoLancamento getTipoLancamento() {
+	public TipoLancamento getTipo() {
 		return tipo;
 	}
 
-	public void setTipoLancamento(TipoLancamento tipoLancamento) {
-		this.tipo = tipoLancamento;
+	public void setTipo(TipoLancamento tipo) {
+		this.tipo = tipo;
 	}
 
 	public Categoria getCategoria() {
